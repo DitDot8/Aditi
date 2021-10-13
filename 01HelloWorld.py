@@ -1,0 +1,8 @@
+print('-' + '-'*(40) + '-')
+print("|                                         |")
+print("|  01Hello                                |")
+print("|  Name : Mr Horan                        |")
+print("|  Version: 01                            |")
+print("|                                         |")
+print('-' + '-'*(40) + '-')
+print("Hello World")
