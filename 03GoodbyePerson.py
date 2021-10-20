@@ -5,7 +5,6 @@ print("|    Name : Aditi                                |")
 print("|    Version : 01                                |")
 print("|                                                |")
 print(' -' + '-'*(46) + '-')
-print("Hello World")
-
-
-
+print("Hello")
+name = input("What is your name ?")
+print("Goodbye", name)
