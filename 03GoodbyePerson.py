@@ -1,6 +1,6 @@
 print(' -' + '-'*(46) + '-')
 print("|                                                |")
-print("|    01GoodbyeWorld                              |")
+print("|    03GoodbyePerson                             |")
 print("|    Name : Aditi                                |")
 print("|    Version : 01                                |")
 print("|                                                |")
