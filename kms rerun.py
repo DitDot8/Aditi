@@ -1,4 +1,3 @@
-import sys
 import os
 
 def print_menu():
@@ -64,15 +63,9 @@ def stringLoop():
         print(string_name[element])
 
 def ascii():
-    text = input("What is your string? ")
-    ASCII_values = [ord(character) for character in text]
-    for element in range(0, len(text)):
-        print(text[element])
-    for element in range(0, len(ASCII_values)):
-        print(ASCII_values[element])
-    print(text, '=', ASCII_values)
-    for args in ((text), (ASCII_values)):
-        print('{0:<10} {1:>8} {2:>8}'.format(*args))
+    hello = input("What is your string? ")
+    for element in hello:
+        print(element, '=', ord(element))
 while True:
     print_menu()
     menu = input("Enter an option ")

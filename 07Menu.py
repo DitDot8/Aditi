@@ -1,5 +1,4 @@
-import sys
-import os
+
 
 def print_menu():
     print(' -' + '-'*(46) + '-')
@@ -64,20 +63,24 @@ def stringLoop():
         print(string_name[element])
 
 def ascii():
-    text = input("What is your string? ")
-    ASCII_values = [ord(character) for character in text]
-    for element in range(0, len(text)):
-        print(text[element])
-    for element in range(0, len(ASCII_values)):
-        print(ASCII_values[element])
-    print(text, '=', ASCII_values)
-    for args in ((text), (ASCII_values)):
-        print('{0:<10} {1:>8} {2:>8}'.format(*args))
+    hello = input("What is your string? ")
+    for element in hello:
+        print(element, '=', ord(element))
+
+def ecode_string():
+    hello = input("What is your string? ")
+    orange = [""]
+    for element in hello:
+        bloop = chr(ord(element)+1)
+        orange.append(bloop)
+        print(element, '=', bloop)
+        print(*orange, sep = "")    
+
 while True:
     print_menu()
     menu = input("Enter an option ")
     print("")
-    valid_options = ('1', '2', '3', '4', '5', '6', '7', '8', 'x')
+    valid_options = ('1', '2', '3', '4', '5', '6', '7', '8', '9', 'x')
     print("----Start of Output ---------------------------")
     print("")
     if menu in valid_options:
@@ -101,6 +104,8 @@ while True:
             stringLoop()
         elif menu == '8':
             ascii()
+        elif menu == '9':
+            ecode_string()
     else:
         print("Invalid option")
 
@@ -108,12 +113,6 @@ while True:
     print("")
 
     input("Press Enter to continue ")
-
-
-
-    
-
-
 
 
 
